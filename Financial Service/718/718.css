@@ -1,0 +1,207 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.finance-example {
+    width: 90%;
+    margin-top: 5rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    font-size: 1rem;
+    margin-top: -1rem;
+}
+
+img {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    }
+
+.style-edition img {
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+.description{
+    padding: 4rem;
+    width: 100%;
+    margin-left: 25%;
+    
+}
+.description strong{
+    width: 110%;
+    font-size: 120%;
+
+}
+.style-edition ul {
+    margin: 1rem 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.style-edition ul li {
+    margin-bottom: 0.5rem;
+}
+
+.style-edition p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    display: flex;
+    width: 40%;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 0px 60px;
+    i, a, p, label {
+        color: white;
+    }
+    .title {
+        font-size: 1.3rem;
+        margin: 12px 0px;
+        color: white;
+    }
+    .info-01 {
+        display: flex;
+        gap: 9rem;
+        .location-contact {
+            .contact {
+                margin-top: 2rem;
+            }
+        }
+        .social-media {
+            width: 50%;
+            .info {
+                margin: 8px 0px;
+            }
+            .media {
+                a {
+                    margin: 0px 4px;
+                    text-align: center;
+                    i {
+                        padding: 11px 0px;
+                        background-color: white;
+                        color: black;
+                        border-radius: 6px;
+                        font-size: 1.2rem;
+                        width: 7.5%;
+                    }
+                }
+            }
+        }
+    }
+    .info-02 {
+        display: flex;
+        flex-direction: column;
+        .link {
+            display: flex;
+            gap: 3.5rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                a {
+                    margin: 5px 0px;
+                }
+            }
+        }
+    }
+    .ruler {
+        width: 100%;
+        background-color: rgba(149, 148, 148, 0.747);
+        height: 1px;
+        margin: 4rem 0rem;
+    }
+    .info-03 {
+        .company {
+            text-align: center;
+            padding: 3rem 0rem;
+            a {
+                margin: 40px;
+                .papan {
+                    width: 22%;
+                }
+                .porsche {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media (width <= 1080px) {
+
+    .nav-bar{
+        .navbar{
+            label{
+                display: block;
+            }
+            .content{
+                display: none;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                padding: 30px;
+                background-color: rgb(255, 255, 255);
+                .models:hover{
+                    .overflow{
+                        overflow-y: hidden;
+                        .model-container{
+                            overflow-y: scroll;
+                            grid-template-columns: repeat(1,1fr)
+                        }
+                    }
+
+                }
+                .container{
+                position: relative;
+                bottom: 2rem;
+                background-color: aqua;
+                }
+                
+                
+            }
+        }
+        #check:checked ~ .content{
+            display: block;
+        }
+    }
+    .footer {
+        .info-01 {
+            flex-direction: column;
+            gap: 3rem;
+
+            .social-media {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
